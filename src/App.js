@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+const remote = require('@electron/remote')
+const wg = remote.require('../wg_napi/dist/index.node');
+console.log(wg.wgStart())
 function App() {
   return (
     <div className="App">

@@ -1,0 +1,19 @@
+[package]
+name = "wg_napi"
+version = "0.1.0"
+authors = ["Bhargavamacha <mbsai29@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+# compile to .so or .dl file based on OS
+crate-type = ["cdylib"]
+
+[dependencies]
+# Node.js NAPI helper library
+node-bindgen = { version = "4.0" }
+# Wiregaurd-rust
+boringtun = "0.3.0"
+
+[build-dependencies]
+node-bindgen = { version = "4.0", features = ["build"] }

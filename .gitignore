@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/wg_napi/target/*
+/wg_napi/Cargo.lock/*
